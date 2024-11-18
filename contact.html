@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="category.css">
+   
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   
+
+</head>
+<body>
+      <!--Header section-->
+      <header class="header sticky-top">
+        <a href="index.html" target="_parent"><img class="logo" src="images/logo.png" alt="" /></a>
+
+        <span style="font-size:30px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776;</span>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="index.html" target="_parent"><h5>Furniture Fixture</h5></a> 
+
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html" target="_parent">Home</a>
+          <a href="about.html" target="_parent">About</a>
+          <a href="Shop.html" target="_parent">Shop</a>
+          <a href="contact.html" target="_parent">Contact</a>
+        
+       
+      </div>
+
+
+
+        <nav class="navigation">
+          <ul class="navbar-nav">
+            <li><a href="index.html" target="_parent">Home</a></li>
+            <li><a href="about.html" target="_parent">About</a></li>
+            <li><a href="Shop.html" target="_parent">Shop</a></li>
+            <li><a href="contact.html" target="_parent">Contact</a></li>
+          </ul>
+          <div class="dropdown">
+            <button class="dropbtn">Username <i class="fa-solid fa-user"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">cart</a>
+              <a href="#">logout</a>
+            </div>
+          </div>
+          
+          <i class="fa-solid fa-cart-shopping"></i>
+        </nav>
+
+      </header>
+      <!--Main Content-->
+
+      <main>
+
+        <!--Page title section-->
+      <section class="page-title">
+        <h1>Contact us</h1>
+        <img src="images/header-shop-pic1.webp" alt="">
+      </section>
+
+      <section class="main-content">
+        <div class="row container-fluid  mb-3">
+          <div class="col-md-6">
+            <div class="contact-form">
+              <h2>Get in touch</h2>
+              <form class="row g-3">
+        
+                  <div class="form-floating mb-3 col-md-6">
+                    <input type="name" class="form-control" id="namefloatingInput" placeholder="Name">
+                    <label for="namefloatingInput">Name</label>
+                  </div>
+                  <div class="form-floating mb-3 col-md-6">
+                    <input type="email" class="form-control" id="mailfloatingInput" placeholder="Email">
+                    <label for="mailfloatingInput">Email Address</label>
+                  </div>
+                  <div class="form-floating mb-3 col-md-6">
+                    <input type="tel" class="form-control" id="telfloatingInput" placeholder="Phone">
+                    <label for="telfloatingInput">Phone</label>
+                  </div>
+                  <div class="form-floating mb-3 col-md-6">
+                    <input type="text" class="form-control" id="companyfloatingInput" placeholder="Company">
+                    <label for="companyfloatingInput">Company</label>
+                  </div>
+                  <div class="form-floating mb-3 col-md-12">
+                    <input type="text" class="form-control" id="subjectfloatingInput" placeholder="Subject">
+                    <label for="subjectfloatingInput">Subject</label>
+                  </div>
+        
+                  <div class="form-floating mb-3 col-md-12">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </div>
+        
+        
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.336635050524!2d31.217264985374044!3d30.059556316372586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1722902014215!5m2!1sen!2seg" 
+            width="100%" height="550" style="border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-md-12">
+            <div class="contact-info">
+              <h2>Contact Information</h2>
+              <p><i class="fa-solid fa-location-dot"></i> 123 Main St, Anytown, USA 12345</p>
+              <p><i class="fa-solid fa-phone"></i> 555-555-5555</p>
+              <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+              <p><i class="fa-solid fa-clock"></i> Monday - Friday, 9am - 5pm</p>
+              </div>
+            </div>
+          </div>
+      </section>
+     
+  
+     
+    </main>
+
+    <!--footer section-->
+<footer>
+    <p>&copy; 2024 Furniture House</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>

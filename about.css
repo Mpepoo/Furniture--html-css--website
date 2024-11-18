@@ -1,0 +1,78 @@
+.about-header h1{
+    font-size: 6rem;
+    background: linear-gradient(45deg, #002264, #d0e0fe);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 2% 0;
+    text-transform: uppercase;
+    animation: slideInFromUP 3s;
+    transition: all .5s ease-in-out;
+    transform-origin: right top;
+   
+    
+}
+@keyframes slideInFromUP {
+    0% {
+      transform: translateY(-150%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .main-content {
+    margin: 0 10%;
+}
+
+  .about-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 2%;
+    margin-top: 50px;
+    
+}
+.about-video {
+  width: 50%;
+  border-radius: 150px 0;
+}
+
+.about-content {
+  width: 50%;
+    padding: 5%;
+    border-radius: 20px;
+}
+ 
+
+  .about-content h1 {
+    color: #133372;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.about-content p{
+    color: #000000;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.mission-section{
+  display: flex;
+  width: 100vw;
+  column-gap: 2%;
+  margin: 50px 0;
+  background: linear-gradient(140deg, #0d2f6f82, #0d2f6fa8, #464646c2), url(images/nature.jpg);
+  padding: 5%;
+  background-position: center;
+}
+.mission-content , .vision-content{
+  width: 50%;
+  background-color: #00000091;
+  color: #ffffff;
+  padding: 4%;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0px 5%;
+  line-height: 1.8rem;
+}

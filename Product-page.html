@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="product-page.css">
+    <link rel="stylesheet" href="category.css">
+
+    <link rel="stylesheet" href="responsive.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--Header section-->
+    <header class="header sticky-top">
+        <a href="index.html" target="_parent"><img class="logo" src="images/logo.png" alt="" /></a>
+
+        <span style="font-size:30px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776;</span>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="index.html" target="_parent"><h5>Furniture Fixture</h5></a> 
+
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html" target="_parent">Home</a>
+          <a href="about.html" target="_parent">About</a>
+          <a href="Shop.html" target="_parent">Shop</a>
+          <a href="contact.html" target="_parent">Contact</a>
+        
+       
+      </div>
+        <nav class="navigation">
+          <ul class="navbar-nav">
+            <li><a href="index.html" target="_parent">Home</a></li>
+            <li><a href="about.html" target="_parent">About</a></li>
+            <li><a href="Shop.html" target="_parent">Shop</a></li>
+            <li><a href="contact.html" target="_parent">Contact</a></li>
+          </ul>
+          <div class="dropdown">
+            <button class="dropbtn">Username <i class="fa-solid fa-user"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">cart</a>
+              <a href="#">logout</a>
+            </div>
+          </div>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </nav>
+        
+  
+      </header>
+      <!--End of Header section-->
+
+      <!--Product details section-->
+      <main-content>
+      <section class="product-details">
+        <div class="product-container">
+            <div class="product-images">
+                
+                    <img  class="product-details-img" src="images/chair.webp" alt="">
+                    
+                    <ul class="product-thumbs">
+                        <li><img src="images/chair.webp" alt=""></li>
+                        <li><img src="images/grey-sofa.png" alt=""></li>
+                        <li><img src="images/product-10.png" alt=""></li>
+                        <li><img src="images/sofa-clip-art.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="product-details-info">
+                    <h1>Product Name</h1>
+                    <h2>Price: 120$</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                            <div class="product-details-color" >
+                                <h3>Color:</h3>
+                                <span class="color-black"></span>
+                                <span class="color-red"></span>
+
+                            </div>
+                            <button class="add-to-cart">Add to cart</button>
+                </div>
+                
+            </div>
+        
+
+      </section>
+<!--Tabs section-->
+      <div class="tabbed">
+        <input type="radio" id="tab1" name="css-tabs" checked>
+        <input type="radio" id="tab2" name="css-tabs">
+        <input type="radio" id="tab3" name="css-tabs">
+        
+        <ul class="tabs">
+          <li class="tab"><label for="tab1">Description</label></li>
+          <li class="tab"><label for="tab2">Shipping Details</label></li>
+          <li class="tab"><label for="tab3">Return Policy</label></li>
+        </ul>
+        
+        <div class="tab-content">
+          <h4>Gangsta lipsum</h4>
+          <p>Da bomb ipsizzle dolizzle sit amizzle, consectetuer adipiscing fo shizzle. Nullam yo velizzle, aliquet volutpizzle, fo shizzle yippiyo, for sure vizzle, arcu. Black eget fo shizzle. Sizzle erizzle. Rizzle at dolizzle dapibizzle turpis tempizzle izzle. Maurizzle crackalackin nibh et check out this. Cool check it out tortizzle. Break it down bling bling rhoncizzle my shizz. Fo hizzle rizzle platea boom shackalack. Gangsta dapibus. Owned tellus urna, pretizzle black, mattizzle ac, eleifend for sure, nunc. Owned suscipizzle. Integizzle sempizzle shiz sed purizzle.</p>
+        </div>
+        
+        <div class="tab-content">
+          <h4>Zombie lipsum</h4>
+          <p>Zombie ipsum brains reversus ab cerebellum viral inferno, brein nam rick mend grimes malum cerveau cerebro. De carne cerebro lumbering animata cervello corpora quaeritis. Summus thalamus brains sit​​, morbo basal ganglia vel maleficia? De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. </p>
+        </div>
+        
+        <div class="tab-content">
+          <h4>New age bullshit</h4>
+          <p>Our conversations with other pilgrims have led to an awakening of pseudo-astral consciousness. Who are we? Where on the great myth will we be re-energized? We are at a crossroads of complexity and stagnation.</p>
+          <p>Eons from now, we dreamers will exist like never before as we are aligned by the cosmos. We are being called to explore the stratosphere itself as an interface between nature and complexity. We must learn how to lead infinite lives in the face of bondage.</p>
+          
+        </div>
+      </div>
+<!--related products-->
+<h1 class="categories-h1" id="related-h1">Related Products</h1>
+      <section class="product-list-container">
+        
+        <div class="product-card">
+          <a href="Product-page.html">
+            <div class="product-image">
+             <img src="images/chair.webp" alt="table">
+             <h2>Modern Chair</h2>
+            </div>
+          </a>
+          <div class="hidden-content">
+            <p>$120.00</p>
+            <button class="add-to-cart"> <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      
+
+        <div class="product-card">
+          <a href="Product-page.html">
+            <div class="product-image">
+             <img src="images/table-pic8.webp" alt="table">
+             <h2>Modern Chair</h2>
+            </div>
+          </a>
+          <div class="hidden-content">
+            <p>$120.00</p>
+            <button class="add-to-cart"> <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <a href="Product-page.html">
+            <div class="product-image">
+             <img src="images/blue-sofa.png" alt="table">
+             <h2>Modern Chair</h2>
+            </div>
+          </a>
+          <div class="hidden-content">
+            <p>$120.00</p>
+            <button class="add-to-cart"> <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+
+      </section>
+    </main-content>
+    <div style="height: 100px;">
+
+    </div>
+</body>
+
+
+<!--footer section-->
+<footer>
+  <p>&copy; 2024 Furniture House</p>
+</footer>
+</html>

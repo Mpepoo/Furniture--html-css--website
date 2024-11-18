@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chair Category</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="main.js"></script>
+</head>
+<body>
+
+  <!--Header section-->
+    <header class="header sticky-top">
+        <a href="index.html" target="_parent"><img class="logo" src="images/logo.png" alt="" /></a>
+
+        <span style="font-size:30px;cursor:pointer" class="hamburger" onclick="openNav()">&#9776;</span>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="index.html" target="_parent"><h5>Furniture Fixture</h5></a> 
+
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html" target="_parent">Home</a>
+          <a href="about.html" target="_parent">About</a>
+          <a href="Shop.html" target="_parent">Shop</a>
+          <a href="contact.html" target="_parent">Contact</a>
+        
+       
+      </div>
+
+
+        <nav class="navigation">
+          <ul class="navbar-nav">
+            <li><a href="index.html" target="_parent">Home</a></li>
+            <li><a href="about.html" target="_parent">About</a></li>
+            <li><a href="Shop.html" target="_parent">Shop</a></li>
+            <li><a href="contact.html" target="_parent">Contact</a></li>
+          </ul>
+          <div class="dropdown">
+            <button class="dropbtn">Username <i class="fa-solid fa-user"></i></button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">cart</a>
+              <a href="#">logout</a>
+            </div>
+          </div>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </nav>
+
+      </header>
+
+      <main>
+
+        <!--page title section-->
+      <section class="page-title">
+        <h1>Chairs</h1>
+        <img src="images/header-shop-pic1.webp" alt="">
+      </section>
+
+      <!--Products section-->
+      <section class="product-list-container">
+
+        <div class="product-card">
+          <a href="Product-page.html">
+          <div class="product-image">
+           <img src="images/chair.webp" alt="table">
+           <h2>Modern Chair</h2>
+          </div>
+        </a>
+          <div class="hidden-content">
+            <p>$120.00</p>
+            <button class="add-to-cart"> <i class="fa-solid fa-cart-shopping"></i></button>
+            <button data-bs-toggle="modal" data-bs-target="#product-quick" class="add-to-cart"> <i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          </div>
+        </div>
+      
+
+        <div class="product-card">
+          <a href="Product-page.html">
+            <div class="product-image">
+             <img src="images/table-pic8.webp" alt="table">
+             <h2>Modern Chair</h2>
+            </div>
+          </a>
+          <div class="hidden-content">
+            <p>$120.00</p>
+            <button class="add-to-cart"> <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <a href="Product-page.html">
+            <div class="product-image">
+             <img src="images/blue-sofa.png" alt="table">
+             <h2>Modern Chair</h2>
+            </div>
+          </a>
+          <div class="hidden-content">
+            <p>$120.00</p>
+            <button class="add-to-cart"> <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <a href="Product-page.html">
+            <div class="product-image">
+             <img src="images/blue-sofa.png" alt="table">
+             <h2>Modern Chair</h2>
+            </div>
+          </a>
+          <div class="hidden-content">
+            <p>$120.00</p>
+            <button class="add-to-cart"> <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <a href="Product-page.html">
+            <div class="product-image">
+             <img src="images/chair.webp" alt="table">
+             <h2>Modern Chair</h2>
+            </div>
+          </a>
+          <div class="hidden-content">
+            <p>$120.00</p>
+            <button class="add-to-cart"> <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <a href="Product-page.html">
+            <div class="product-image">
+             <img src="images/table-pic8.webp" alt="table">
+             <h2>Modern Chair</h2>
+            </div>
+          </a>
+          <div class="hidden-content">
+            <p>$120.00</p>
+            <button class="add-to-cart"> <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+
+      </section>
+      
+    </main>
+
+    <div style="height: 100px;">
+
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade product-quick" id="product-quick">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6 col-lg-12">
+            <a href="Product-page.html"> <img width="300px" src="images/chair.webp" alt="chair"></a>
+          </div>
+          <div class="col-md-6 col-lg-12">
+
+            <div class="quick-content">
+              <a href="Product-page.html"><h2>Modern Chair</h2></a>
+              <p>$120.00</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Unde sint asperiores quisquam! Possimus, inventore! Facilis ipsum animi</p>
+              <button class="add-to-cart"> Add to cart</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+  <!--Footer section-->
+  <footer>
+    <p>&copy; 2024 Furniture House</p>
+  </footer>
+
+
+
+</html>

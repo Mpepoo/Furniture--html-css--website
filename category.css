@@ -1,0 +1,120 @@
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: auto;
+    background-color: burlywood;
+    border-radius: 130px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    animation: fadeIn 5s;
+    flex-wrap: wrap;
+}
+
+.page-title img {
+    width: 450px;
+    margin-top: -50px;
+}
+
+.page-title h1 {
+    color: #0f3348;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+
+.product-image img {
+    width: 30%;
+    
+}
+
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 90%;
+  margin: auto;
+  animation: fadeIn 5s;
+  gap: 1.5em;
+}
+  
+  .product-card {
+    width: 31%;
+    margin-bottom: 20px;
+    border: 1px solid #f5a705;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.product-card a {
+  text-decoration: none;
+}  
+
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .product-card img:hover {
+    transition: 0.4s;
+    
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  .hidden-content {
+    opacity: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 0%;
+    visibility: hidden;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	-webkit-transform: translateY(15px);
+	-ms-transform: translateY(15px);
+	transform: translateY(15px);
+}
+
+.product-card:hover .hidden-content{
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.product-card h2 {
+  color: #0f3448;
+  text-align: center;
+}
+.hidden-content p {
+  color: #0f3448;
+  font-size: 18px;;
+}
+
+button.add-to-cart {
+  border-radius: 30px;
+  padding: 10px 14px;
+  background-color: #0f3448;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-body {
+ 
+  text-align: center !important;
+}
+
+.modal-body h2 {
+  color: #0f3548;
+}
